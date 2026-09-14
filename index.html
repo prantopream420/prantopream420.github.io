@@ -560,94 +560,141 @@
                     </div>
                 </a>
 
-            </div>
-        </div>
+                            </div>
+
+                            <!-- Photo Gallery — me, my team & moments -->
+                            <div class="section-header gallery-sub" style="margin-top:72px;">
+                                <span class="section-badge">Snapshot Gallery</span>
+                                <h2>Me, My Team &amp; <span class="highlight">Moments</span></h2>
+                                <p class="section-subtitle">A few of my favourite captured moments — tap any photo to view it full-screen.</p>
+                            </div>
+                            <div class="photo-grid" id="photoGrid">
+                                <figure class="photo-item photo-wide" data-full="images/gallery-web/gallery-1.jpg">
+                                    <img src="images/gallery-web/gallery-1.jpg" alt="Team moment" loading="lazy">
+                                    <figcaption><span>Team moment</span><small>With my team</small></figcaption>
+                                </figure>
+                                <figure class="photo-item" data-full="images/gallery-web/gallery-2.jpg">
+                                    <img src="images/gallery-web/gallery-2.jpg" alt="Event stage" loading="lazy">
+                                    <figcaption><span>On stage</span><small>Live event</small></figcaption>
+                                </figure>
+                                <figure class="photo-item photo-tall" data-full="images/gallery-web/gallery-3.jpg">
+                                    <img src="images/gallery-web/gallery-3.jpg" alt="Portrait moment" loading="lazy">
+                                    <figcaption><span>Portrait</span><small>Golden hour</small></figcaption>
+                                </figure>
+                                <figure class="photo-item" data-full="images/gallery-web/gallery-4.jpg">
+                                    <img src="images/gallery-web/gallery-4.jpg" alt="Team photo" loading="lazy">
+                                    <figcaption><span>With the crew</span><small>After the event</small></figcaption>
+                                </figure>
+                                <figure class="photo-item photo-tall" data-full="images/gallery-web/gallery-5.jpg">
+                                    <img src="images/gallery-web/gallery-5.jpg" alt="Event coverage" loading="lazy">
+                                    <figcaption><span>Covering</span><small>Behind the lens</small></figcaption>
+                                </figure>
+                                <figure class="photo-item" data-full="images/gallery-web/gallery-6.jpg">
+                                    <img src="images/gallery-web/gallery-6.jpg" alt="Group moment" loading="lazy">
+                                    <figcaption><span>Group shot</span><small>Good times</small></figcaption>
+                                </figure>
+                                <figure class="photo-item photo-wide" data-full="images/gallery-web/gallery-7.jpg">
+                                    <img src="images/gallery-web/gallery-7.jpg" alt="Fun moment" loading="lazy">
+                                    <figcaption><span>Fun moment</span><small>Unscripted</small></figcaption>
+                                </figure>
+                                <figure class="photo-item" data-full="images/gallery-web/gallery-8.jpg">
+                                    <img src="images/gallery-web/gallery-8.jpg" alt="Photography shot" loading="lazy">
+                                    <figcaption><span>Through my lens</span><small>Photography</small></figcaption>
+                                </figure>
+                            </div>
+
+                            <!-- Lightbox -->
+                            <div class="lightbox" id="lightbox" aria-hidden="true">
+                                <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+                                <img id="lightboxImg" src="" alt="Enlarged photo">
+                            </div>
+                        </div>
     </section>
     <section id="contact" class="section contact">
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">Let's Connect</span>
                 <h2>Get <span class="highlight">In Touch</span></h2>
-                <p class="section-subtitle">Have a project in mind? Want to collaborate? Drop a message.</p>
+                <p class="section-subtitle">Pick the way that works best for you — every link here opens directly.</p>
             </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        </div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>prantopream@gmail.com</p>
-                            <p>ppream222270@bscse.uiu.ac.bd</p>
-                        </div>
+
+            <!-- Direct Contact Buttons -->
+            <div class="reach-grid">
+                <a href="mailto:prantopream@gmail.com" class="reach-card reach-email">
+                    <div class="reach-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                        </div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+880 1846-562146</p>
-                            <p>+880 1705-988727</p>
-                        </div>
+                    <div class="reach-info">
+                        <h3>Email</h3>
+                        <p>prantopream@gmail.com</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        </div>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Ka-103, Jamaj Road, Kuril, Dhaka-1229</p>
-                            <p>Dhaka, Bangladesh</p>
-                        </div>
+                    <span class="reach-arrow">→</span>
+                </a>
+                <a href="https://wa.me/8801846562146" target="_blank" rel="noopener" class="reach-card reach-whatsapp">
+                    <div class="reach-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     </div>
-                </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" placeholder="John Doe" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" placeholder="john@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" placeholder="Project Collaboration">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                    </form>
-                    <div id="formSuccess" class="form-success" style="display:none">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <h3>Message Sent!</h3>
-                        <p>Thank you for reaching out. I'll get back to you soon.</p>
+                    <div class="reach-info">
+                        <h3>WhatsApp</h3>
+                        <p>+880 1846-562146</p>
                     </div>
-                </div>
+                    <span class="reach-arrow">→</span>
+                </a>
+                <a href="tel:+8801846562146" class="reach-card reach-phone">
+                    <div class="reach-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    </div>
+                    <div class="reach-info">
+                        <h3>Call</h3>
+                        <p>+880 1846-562146</p>
+                    </div>
+                    <span class="reach-arrow">→</span>
+                </a>
+                <a href="https://www.linkedin.com/in/pranto-pream-55608a239" target="_blank" rel="noopener" class="reach-card reach-linkedin">
+                    <div class="reach-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <div class="reach-info">
+                        <h3>LinkedIn</h3>
+                        <p>pranto-pream-55608a239</p>
+                    </div>
+                    <span class="reach-arrow">→</span>
+                </a>
             </div>
-            <div class="social-links">
-                <a href="https://github.com/prantopream420" target="_blank" class="social-link" aria-label="GitHub">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+
+            <!-- Online Presence — Highlighted -->
+            <div class="section-header" style="margin-top:64px;">
+                <span class="section-badge">My Online Presence</span>
+                <h2>Follow My <span class="highlight">Content</span></h2>
+                <p class="section-subtitle">These represent my daily life, tech talks, and creative style.</p>
+            </div>
+            <div class="presence-grid">
+                <a href="https://youtube.com/@mdlppream" target="_blank" rel="noopener" class="presence-card presence-youtube">
+                    <div class="presence-badge">YouTube</div>
+                    <div class="presence-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </div>
+                    <h3>M.D.L - Tech</h3>
+                    <p>Technology, unboxings, reviews, daily vlogs and everything tech.</p>
+                    <span class="presence-cta">Watch on YouTube →</span>
                 </a>
-                <a href="https://www.facebook.com/djpranto.pream" target="_blank" class="social-link" aria-label="Facebook">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <a href="https://www.facebook.com/djpranto.pream" target="_blank" rel="noopener" class="presence-card presence-facebook">
+                    <div class="presence-badge">Profile</div>
+                    <div class="presence-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </div>
+                    <h3>Pranto Pream</h3>
+                    <p>Personal life, thoughts, and daily moments — how I talk, think, and live.</p>
+                    <span class="presence-cta">View on Facebook →</span>
                 </a>
-                <a href="https://www.facebook.com/vibevlogs1122" target="_blank" class="social-link" aria-label="Facebook Page">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                </a>
-                <a href="https://youtube.com/@mdlppream" target="_blank" class="social-link" aria-label="YouTube">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/pranto-pream-55608a239" target="_blank" class="social-link" aria-label="LinkedIn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </a>
-                <a href="https://www.instagram.com/prantopream" target="_blank" class="social-link" aria-label="Instagram">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                <a href="https://www.facebook.com/vibevlogs1122" target="_blank" rel="noopener" class="presence-card presence-page">
+                    <div class="presence-badge">Page</div>
+                    <div class="presence-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </div>
+                    <h3>Vibe & Variety</h3>
+                    <p>Curated finds, daily vlogs, tech, and gifts — sourced from around the world.</p>
+                    <span class="presence-cta">Visit Page →</span>
                 </a>
             </div>
         </div>

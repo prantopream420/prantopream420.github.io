@@ -32,22 +32,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 // Album cards — stagger-in animation on scroll
 
 
-// Contact form handling
-function handleFormSubmit(event) {
-    event.preventDefault();
-    const form = document.getElementById('contactForm');
-    const success = document.getElementById('formSuccess');
-
-    form.style.display = 'none';
-    success.style.display = 'flex';
-
-    // Reset after 5 seconds
-    setTimeout(() => {
-        form.reset();
-        form.style.display = 'block';
-        success.style.display = 'none';
-    }, 5000);
-}
+// Contact form handling removed — direct links used instead (email, WhatsApp, phone)
 
 // Intersection Observer for section animations
 const observerOptions = {
@@ -65,7 +50,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Animate cards on scroll
-document.querySelectorAll('.about-card, .skill-category, .project-card, .album-card').forEach((el, i) => {
+document.querySelectorAll('.about-card, .skill-category, .project-card, .album-card, .reach-card, .presence-card').forEach((el, i) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
