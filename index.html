@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranto Pream — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <a href="#hero" class="logo">PP</a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="badge">Digital Creator · Tech Enthusiast</span>
+                <h1>Pranto <span class="highlight">Pream</span></h1>
+                <p class="hero-tagline">IT Professional · Photographer · Developer</p>
+                <p class="hero-desc">Tech-savvy problem solver with a passion for Linux, Android, and creative photography. Building practical solutions through code and capturing moments through the lens.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Events Covered</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="images/profile.jpg" alt="Pranto Pream" class="profile-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="profile-placeholder" style="display:none">
+                        <svg viewBox="0 0 200 200" width="120" height="120"><circle cx="100" cy="70" r="40" fill="rgba(255,255,255,.2)"/><path d="M30,180 Q100,100 170,180" fill="rgba(255,255,255,.2)"/></svg>
+                    </div>
+                    <div class="floating-badge badge-github">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span>prantopream420</span>
+                    </div>
+                    <div class="floating-badge badge-ly">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.666 3.2H16.8c-.8 0-1.333.5-1.6 1.6L12.8 12l2.4-6.4c.267-1.1.8-1.6 1.6-1.6h1.067L16.8 12l3.2-8.8h.267zM7.467 3.2L2.133 16l-.267.8H4.4L7.2 10.4l.267-1.2v1.2h2.133V3.2H7.467zm3.067 12.8h4.666v2H10.534v-2z"/></svg>
+                        <span>mdlppream</span>
+                    </div>
+                    <div class="floating-badge badge-ig">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        <span>prantopream</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Who I Am</span>
+                <h2>About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">A versatile professional blending technical expertise with creative passion.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h3>Tech & Troubleshooting</h3>
+                    <p>5+ years of hands-on IT support — diagnosing hardware/software issues, configuring systems, and delivering clear solutions to customers and businesses.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon about-icon-purple">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    </div>
+                    <h3>Photography & Events</h3>
+                    <p>Active photographer and event coverage specialist — capturing moments at university club events, concerts, and cultural programs as Co-Head of Photography at UIU APP Forum.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon about-icon-green">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3>Open Source Projects</h3>
+                    <p>Building real-world solutions — from Linux driver patches and Android device trees to system monitoring apps and POS tools, all shared on GitHub.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon about-icon-orange">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3>Community Leader</h3>
+                    <p>Co-Head of Photography at UIU APP Forum and former executive at UIU Photography Club — driving event engagement and growing social media presence by 75%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">What I Do</span>
+                <h2>Skills & <span class="highlight">Expertise</span></h2>
+                <p class="section-subtitle">A diverse toolkit spanning technology, creativity, and communication.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        IT & Software Support
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Hardware Troubleshooting</span>
+                        <span class="skill-tag">OS Setup & Config</span>
+                        <span class="skill-tag">Software Installation</span>
+                        <span class="skill-tag">User Assistance</span>
+                        <span class="skill-tag">Product Sales & Consultation</span>
+                        <span class="skill-tag">Quotations & Specs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                        Linux & Open Source
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Ubuntu Command Line</span>
+                        <span class="skill-tag">System Troubleshooting</span>
+                        <span class="skill-tag">Package Management</span>
+                        <span class="skill-tag">libfprint & Driver Patching</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Bash Scripting</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        Android / AOSP
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">ADB & Fastboot</span>
+                        <span class="skill-tag">Custom Recovery</span>
+                        <span class="skill-tag">Device Trees</span>
+                        <span class="skill-tag">vendor_boot Architecture</span>
+                        <span class="skill-tag">ROM Building</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                        Programming
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C / C++</span>
+                        <span class="skill-tag">API Testing (REST/JSON)</span>
+                        <span class="skill-tag">SQL Fundamentals</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.32 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                        Creative & Media
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Photography</span>
+                        <span class="skill-tag">Adobe Lightroom</span>
+                        <span class="skill-tag">Video Editing</span>
+                        <span class="skill-tag">Event Coverage</span>
+                        <span class="skill-tag">Social Media Content</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        QA & Testing
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Test Case Design</span>
+                        <span class="skill-tag">Functional Testing</span>
+                        <span class="skill-tag">Bug Reproduction</span>
+                        <span class="skill-tag">Exploratory Testing</span>
+                        <span class="skill-tag">SDLC / STLC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Builds & Code</span>
+                <h2>Projects & <span class="highlight">Contributions</span></h2>
+                <p class="section-subtitle">Real-world solutions born from curiosity and hands-on problem solving.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <span class="project-badge">Hardware · Linux</span>
+                    </div>
+                    <h3 class="project-title">Ubuntu ELAN Fingerprint Fix</h3>
+                    <p class="project-desc">Developed and validated a libfprint-based fix for the HP ProBook 440 G8 fingerprint sensor. Includes device-specific driver patching, firmware recovery handling, template identification, and a self-contained recovery installer with a GUI installer.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">libfprint</span>
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">PAM</span>
+                        <span class="tech-tag">Ubuntu 26.04</span>
+                    </div>
+                    <a href="https://github.com/prantopream420/HP-ProBook-440-G8-Fingerprint-Fix-Module-for-Ubuntu" target="_blank" class="project-link">
+                        View on GitHub
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon project-icon-green">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        </div>
+                        <span class="project-badge">Android · AOSP</span>
+                    </div>
+                    <h3 class="project-title">Xiaomi Luming Recovery</h3>
+                    <p class="project-desc">Worked on Android recovery and device-tree bring-up for Xiaomi Luming, exploring modern vendor_boot architecture, boot components, and device-specific recovery behavior through iterative debugging.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Android</span>
+                        <span class="tech-tag">AOSP</span>
+                        <span class="tech-tag">vendor_boot</span>
+                        <span class="tech-tag">ADB</span>
+                    </div>
+                    <a href="https://github.com/prantopream420/android_device_xiaomi_luming-recovery" target="_blank" class="project-link">
+                        View on GitHub
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon project-icon-purple">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                        <span class="project-badge">Software · Monitoring</span>
+                    </div>
+                    <h3 class="project-title">Device Monitor (VoltMatrix)</h3>
+                    <p class="project-desc">Public software project focused on device/system monitoring and practical technical tooling. Native Android app with modern animated glass interface, battery health tracking, sensor info, and offline calculator utilities. Currently at v3.0.0.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Android</span>
+                        <span class="tech-tag">Kotlin/Java</span>
+                        <span class="tech-tag">Glass UI</span>
+                        <span class="tech-tag">v3.0.0</span>
+                    </div>
+                    <a href="https://github.com/prantopream420/Device-Monitor/releases/tag/v3.0.0" target="_blank" class="project-link">
+                        View Release
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon project-icon-orange">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <span class="project-badge">macOS · Linux</span>
+                    </div>
+                    <h3 class="project-title">macOS26 Glass Ubuntu</h3>
+                    <p class="project-desc">Cross-platform desktop customization project bringing macOS 26-style glass design language to Ubuntu and Linux desktops — exploring visual design patterns and system-level theming.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Desktop Theming</span>
+                        <span class="tech-tag">Linux</span>
+                    </div>
+                    <a href="https://github.com/prantopream420/macos26-glass-ubuntu" target="_blank" class="project-link">
+                        View on GitHub
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                        </div>
+                        <span class="project-badge">Business · Software</span>
+                    </div>
+                    <h3 class="project-title">POS App Maker</h3>
+                    <p class="project-desc">Exploring practical point-of-sale application workflows and business-oriented software tooling — bridging retail IT expertise with software development.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Business Apps</span>
+                    </div>
+                    <a href="https://github.com/prantopream420/POS-App-Maker" target="_blank" class="project-link">
+                        View on GitHub
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon project-icon-orange">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.32 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                        </div>
+                        <span class="project-badge">Ubuntu · Face Unlock</span>
+                    </div>
+                    <h3 class="project-title">LumenFace (HP ProBook Face ID)</h3>
+                    <p class="project-desc">Experimental local-only 2D face verifier for Ubuntu GNOME login/lock screens using OpenCV YuNet for face detection and SFace for recognition, with active motion verification for security.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PAM</span>
+                        <span class="tech-tag">Ubuntu GNOME</span>
+                    </div>
+                    <a href="https://github.com/prantopream420/HP-ProBook-440-G8-Face-ID-Setup-for-Ubuntu" target="_blank" class="project-link">
+                        View on GitHub
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Moments Captured</span>
+                <h2>Event <span class="highlight">Photography</span></h2>
+                <p class="section-subtitle">Click any album to explore the full collection on Google Photos or Drive.</p>
+            </div>
+            <div class="albums-grid">
+
+                <!-- Club Events — 4 albums -->
+                <a href="https://photos.app.goo.gl/SmSs3C7RSkux7MQ36" target="_blank" rel="noopener" class="album-card">
+                    <div class="album-art">
+                        <img src="images/albums/club-events.svg" alt="UIU Club Events">
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">
+                            <span class="album-cat">Club</span>
+                            <span class="album-count">UIU APP Forum</span>
+                        </div>
+                        <h3 class="album-title">UIU App Forum — Club Night</h3>
+                        <p class="album-desc">Photography coverage of the UIU APP Forum club events and activities.</p>
+                        <span class="album-link-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                            Open on Google Photos
+                        </span>
+                    </div>
+                </a>
+
+                <a href="https://photos.app.goo.gl/SaTYs9ok2nDYBuee8" target="_blank" rel="noopener" class="album-card">
+                    <div class="album-art">
+                        <img src="images/albums/club-events.svg" alt="UIU Photography Club">
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">
+                            <span class="album-cat">Club</span>
+                            <span class="album-count">Photography Club</span>
+                        </div>
+                        <h3 class="album-title">APPF — Club Pics</h3>
+                        <p class="album-desc">Selected shots from UIU Photography Club events and sessions.</p>
+                        <span class="album-link-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                            Open on Google Photos
+                        </span>
+                    </div>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1xD_LiZcGpDwd7VVko9-ec8pN3SBhvTcH?usp=drive_link" target="_blank" rel="noopener" class="album-card">
+                    <div class="album-art">
+                        <img src="images/albums/club-events.svg" alt="Club Events Drive">
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">
+                            <span class="album-cat">Club</span>
+                            <span class="album-count">Drive Album</span>
+                        </div>
+                        <h3 class="album-title">Club Events — Drive Collection</h3>
+                        <p class="album-desc">Full-resolution event photos from university club activities and programs.</p>
+                        <span class="album-link-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+                            Open on Google Drive
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Concerts — 2 albums -->
+                <a href="https://photos.app.goo.gl/K9zE3nZZE1t4VvsMA" target="_blank" rel="noopener" class="album-card album-card--concert">
+                    <div class="album-art">
+                        <img src="images/albums/concerts.svg" alt="Concert Photography">
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">
+                            <span class="album-cat cat-concert">Concert</span>
+                            <span class="album-count">Odyssey 2025</span>
+                        </div>
+                        <h3 class="album-title">Concert Photography — Odyssey</h3>
+                        <p class="album-desc">Live stage coverage from the Odyssey concert event, capturing energy and moments.</p>
+                        <span class="album-link-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                            Open on Google Photos
+                        </span>
+                    </div>
+                </a>
+
+                <a href="https://photos.app.goo.gl/b4Z75QmmiuT9jnuN8" target="_blank" rel="noopener" class="album-card album-card--concert">
+                    <div class="album-art">
+                        <img src="images/albums/concerts.svg" alt="Concert Photography">
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">
+                            <span class="album-cat cat-concert">Concert</span>
+                            <span class="album-count">Jan 2025</span>
+                        </div>
+                        <h3 class="album-title">Concert Photography — Live Show</h3>
+                        <p class="album-desc">Music and performance photography from live concert events.</p>
+                        <span class="album-link-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                            Open on Google Photos
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Project Shows — 3 albums -->
+                <a href="https://photos.app.goo.gl/n4g3Ffc6nB6pskm98" target="_blank" rel="noopener" class="album-card album-card--project">
+                    <div class="album-art">
+                        <img src="images/albums/project-shows.svg" alt="Project Show Photography">
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">
+                            <span class="album-cat cat-project">Project Show</span>
+                            <span class="album-count">UIU Club</span>
+                        </div>
+                        <h3 class="album-title">Club Project Show — Vol. 1</h3>
+                        <p class="album-desc">Photography from the university club project exhibition and showcase event.</p>
+                        <span class="album-link-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                            Open on Google Photos
+                        </span>
+                    </div>
+                </a>
+
+                <a href="https://photos.app.goo.gl/ZYDBGTF84MTzqTu88" target="_blank" rel="noopener" class="album-card album-card--project">
+                    <div class="album-art">
+                        <img src="images/albums/project-shows.svg" alt="Project Show">
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">
+                            <span class="album-cat cat-project">Project Show</span>
+                            <span class="album-count">UIU Club</span>
+                        </div>
+                        <h3 class="album-title">Club Project Show — Vol. 2</h3>
+                        <p class="album-desc">Additional coverage from the university project show and tech demonstrations.</p>
+                        <span class="album-link-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                            Open on Google Photos
+                        </span>
+                    </div>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/15PFtJ5rEGOpY-2mA8FOjNdFU5ipTFZjm?usp=sharing" target="_blank" rel="noopener" class="album-card album-card--project">
+                    <div class="album-art">
+                        <img src="images/albums/project-shows.svg" alt="Project Show Drive">
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">
+                            <span class="album-cat cat-project">Project Show</span>
+                            <span class="album-count">Drive Album</span>
+                        </div>
+                        <h3 class="album-title">Project Show — Full Drive Collection</h3>
+                        <p class="album-desc">Full-res drive collection of the club project exhibition photography.</p>
+                        <span class="album-link-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+                            Open on Google Drive
+                        </span>
+                    </div>
+                </a>
+
+                <!-- July Moments -->
+                <a href="https://drive.google.com/drive/folders/1l2_D6Xnj79S8oYjt7_vub2IQluUNWkhq?usp=sharing" target="_blank" rel="noopener" class="album-card album-card--july">
+                    <div class="album-art">
+                        <img src="images/albums/july-moments.svg" alt="July Moments">
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">
+                            <span class="album-cat cat-july">July Moments</span>
+                            <span class="album-count">2024</span>
+                        </div>
+                        <h3 class="album-title">July Moments — A Special Album</h3>
+                        <p class="album-desc">Photography from July 2024 — moments worth remembering, documented through the lens.</p>
+                        <span class="album-link-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+                            Open on Google Drive
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Weddings — 2 albums -->
+                <a href="https://drive.google.com/drive/folders/1Rr30WjvBXMQGk8ZDENWXGTwGzY9Yt8Uw?usp=sharing" target="_blank" rel="noopener" class="album-card album-card--wedding">
+                    <div class="album-art">
+                        <img src="images/albums/wedding.svg" alt="Wedding Photography">
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">
+                            <span class="album-cat cat-wedding">Wedding</span>
+                            <span class="album-count">Ceremony</span>
+                        </div>
+                        <h3 class="album-title">Wedding Photography — Album 1</h3>
+                        <p class="album-desc">Wedding ceremony photography capturing joy, emotion, and precious moments.</p>
+                        <span class="album-link-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+                            Open on Google Drive
+                        </span>
+                    </div>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1WZnLTlouJ3aCmApml54guPMnjb4pBvS2?usp=drive_link" target="_blank" rel="noopener" class="album-card album-card--wedding">
+                    <div class="album-art">
+                        <img src="images/albums/wedding.svg" alt="Wedding Photography">
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">
+                            <span class="album-cat cat-wedding">Wedding</span>
+                            <span class="album-count">Full Collection</span>
+                        </div>
+                        <h3 class="album-title">Wedding Photography — Album 2</h3>
+                        <p class="album-desc">Full wedding day coverage — preparation, ceremony, and celebration moments.</p>
+                        <span class="album-link-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+                            Open on Google Drive
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Let's Connect</span>
+                <h2>Get <span class="highlight">In Touch</span></h2>
+                <p class="section-subtitle">Have a project in mind? Want to collaborate? Drop a message.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>prantopream@gmail.com</p>
+                            <p>ppream222270@bscse.uiu.ac.bd</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+880 1846-562146</p>
+                            <p>+880 1705-988727</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Ka-103, Jamaj Road, Kuril, Dhaka-1229</p>
+                            <p>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Project Collaboration">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                    <div id="formSuccess" class="form-success" style="display:none">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for reaching out. I'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/prantopream420" target="_blank" class="social-link" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/djpranto.pream" target="_blank" class="social-link" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/vibevlogs1122" target="_blank" class="social-link" aria-label="Facebook Page">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://youtube.com/@mdlppream" target="_blank" class="social-link" aria-label="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/pranto-pream-55608a239" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/prantopream" target="_blank" class="social-link" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Pranto Pream. All rights reserved. Built with passion.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
